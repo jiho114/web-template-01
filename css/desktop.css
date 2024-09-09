@@ -1,0 +1,306 @@
+*{margin:0; padding:0; }
+ul, li{list-style:none;}
+a{text-decoration:none;}
+.layout-fix{
+  width:1000px;
+  margin:0 auto;
+}
+
+.container{
+  width:100%;
+  height:100vh;
+  min-width:800px;
+}
+
+.nav{
+  width:100%px;
+  background-image:url(../image/main.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.nav>.menu-bar{
+  width:100%;
+  height:100px;
+  background-color: white;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.nav>.menu-bar>h1{
+  color:black;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  margin-right:30%;
+  font-size:50px;
+}
+
+.nav>.menu-bar>ul{
+  display: flex;
+}
+
+.nav>.menu-bar>ul>li{
+  margin:10px;
+}
+
+.nav>.menu-bar>ul>li>a{
+  color: black;
+  font-size:25px;
+}
+.nav>.menu-bar>ul>li>a:hover{
+  color:yellow;
+}
+.so{
+  margin-left: 50px;
+}
+.so>i{
+  font-size:30px;
+  margin: 5px;
+  padding-top: 5px;
+}
+
+.txt{
+  color: white;
+  transform: translate(20%, 20%);
+}
+
+.txt>h1{
+  font-size: 80px;
+  font-family: Georgia, 'Times New Roman', Times, serif
+  ;
+  display: inline;
+}
+
+.txt>i{
+  font-size:80px;
+}
+
+.txt>h2{
+  font-size:50px;
+  font-weight:normal;
+  margin-top:50px;
+  
+}
+
+.txt>p{
+  font-size:25px;
+  margin-top: 30px;
+}
+
+.txt>button{
+  width:300px;
+  height:50px;
+  font-size: 30px;
+  background-color:transparent;
+  color: white;
+  border:1px solid white;
+  margin-top:100px;
+  margin-right:20px;
+  margin-bottom:30%;
+}
+.flex-ic li{
+
+  font-size:25px;
+}
+.icon{
+  width:100%;
+  padding:142px 0;
+  /* height:500px; */
+  background-color:gold;
+  /* display: flex; */
+  /* justify-content: space-evenly; */
+  text-align: center;
+  /* align-items:center; */
+  font-size:40px;
+  position: relative;
+}
+
+.icon .layout-fix{
+  width:800px;
+}
+
+.icon .flex-ic img{
+  width:150px;
+  border-radius:50%;
+  margin-bottom:50px;
+}
+
+.pe{
+  width:100%;
+  padding-top:100px;
+  padding-left:100px;
+  
+
+}
+
+.pe>i{
+  font-size:60px;
+}
+
+.pe>h2{
+  font-size:70px;
+  display: inline;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+
+.pe>p{
+  font-size:30px;
+  margin-left:60px;
+  margin-top:10px;
+  margin-bottom:100px;
+}
+
+[class^="flex-"] {
+  text-align: center;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+/* [class^=""] 클래스 시작명이 포함 */
+/* [class*=""] 클래스 어느부분이든 포함*/
+/* [class$=""] 클래스 뒷명이 포함*/
+
+.flex-avatar{
+  /* text-align: center;
+  display: flex;
+  justify-content:space-evenly; */
+  font-size:30px;
+}
+
+.avatar img{
+  border-radius:20%;
+  margin-bottom: 20px;
+}
+
+.pe>.txt2>h3{
+  font-size:30px;
+  font-weight: normal;
+  margin: 100px;
+  margin-top: 100px;
+  display: inline-block;
+}
+
+.txt2{
+  text-align: center;
+}
+
+.local{
+  width:100%;
+  background-color: #444;
+  padding-top:100px;
+  padding-left:100px;
+  position: relative;
+  
+}
+
+.local>.contact{
+  font-size:60px;
+  color: white;
+  padding-top:100px;
+}
+
+.local>.contact>i{
+  font-size:60px;
+  display: inline-block;
+}
+
+.local>.contact>h2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: inline-block;
+}
+
+.local>.contact>p{
+  font-size:30px;
+  margin-left:60px;
+  margin-top:10px;
+  margin-bottom:70px;
+}
+
+.number{
+  font-size:30px;
+  color: white;
+  padding-bottom: 20px;
+}
+
+.number>.email{
+  margin-bottom:20px;
+}
+
+.number>.email>i{
+  display: inline-block;
+}
+
+.number>.email>p{
+  display: inline-block;
+}
+.number>.phone>i{
+  display: inline-block;
+}
+
+.number>.phone>p{
+  display: inline-block;
+  padding-bottom:30px;
+}
+
+.phone>h3{
+  font-weight: normal;
+  font-size:30px;
+}
+
+.table1>p{
+  font-size:30px;
+  color: white;
+}
+
+.table1 td>input{
+  font-size: 35px;
+}
+
+.table1 td:nth-child(2)>input{
+  width:50%;
+  height:145px;
+}
+.table2>p{
+  font-size:30px;
+  color: white;
+}
+
+.table2 td>input{
+  font-size: 35px;
+}
+
+.table2 td:nth-child(2)>input{
+  width:50%;
+  height:145px;
+}
+
+
+.local button{
+  width:200px;
+  height:50px;
+  font-size:30px;
+  background-color:sandybrown;
+  border:1px solid gray;
+
+}
+
+.table1{
+  position: absolute;
+  right:0;
+  top:450px;
+  
+}
+
+.table2{
+  position: absolute;
+  right:0;
+  top:800px;
+}
+
+iframe{
+  width:500px;
+  height:500px;
+}
+

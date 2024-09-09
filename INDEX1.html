@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/350ae1936f.js" crossorigin="anonymous"></script>
+  <title>INDEX1</title>
+  <style>
+    *{margin:0; padding:0;}
+    ul, li{list-style:none;}
+    a{text-decoration:none;}
+
+    body{
+      width:100%;
+      height:100vh;
+      min-width:1000px;
+    }
+
+    .hd{
+      width:100%;
+      height:100%;
+      background-image:url(image/main.jpg);
+      background-position:center;
+      background-size: cover;
+    }
+    
+    .layout{
+      width:1000px;
+      margin:0 auto;
+      padding-left:50px;
+    }
+
+    nav{
+      background-color: white;
+      height:70px;
+      color: black;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      border-bottom:1px solid grey;
+    }
+
+    .menu-bar, ul{
+      display: flex;
+    }
+
+    .menu-bar li, i{
+      margin:0 10px;
+      font-size:20px;
+    }
+
+      nav h1{
+      font-size:30px;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    nav a{
+      color: black;
+    }
+    nav a:hover{
+      color:gold;
+    }
+
+    nav i {
+      padding-top:5px;
+    }
+
+    .layout{
+      width:1000px;
+      margin:0 auto;
+      color:white;
+    }
+
+    .txt {
+      margin:100px 0;
+    }
+
+    .txt h1{
+      font-size:60px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: inline;
+    }
+   
+    .txt i{
+      font-size:60px;
+      display: inline;
+    }
+
+    .txt h2{
+      font-weight: normal;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin-top:10px;
+      margin-bottom: 10px;
+    }
+
+    .txt button{
+      margin-top:20px;
+      width:150px;
+      height:50px;
+      background-color: transparent;
+      color: white;
+      border:1px solid white;
+      margin-right: 20px;
+    }
+
+    .icon{
+      width:100%;
+      background-color: gold;
+    }
+
+    .layout2{
+      width:800px;
+      margin:0 auto;
+      display: flex;
+    }
+
+    .layout2 ul{
+      width:800px;
+      display: flex;
+      justify-content: space-evenly;
+      padding:100px;
+      text-align: center;
+    }
+
+    .layout2 img{
+      border-radius:50px;
+      margin-bottom:10px;
+    }
+
+    .avt{
+      width:100%;
+      background-color:white;
+    }
+
+    .layout3{
+      width:1000px;
+      margin:0 auto;
+    }
+
+    .layout3 ul{
+      padding-top:100px;
+      text-align:center;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding-bottom: 50px;
+    }
+
+    .layout3 li{
+      font-weight:bold;
+      margin:5px;
+    }
+
+    .layout3 img{
+      border-radius:50%;
+      margin-bottom:20px;
+    }
+
+    
+    .txt-box1{
+      color: black;
+      font: size 20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom:80px;
+      
+    }
+
+    .txt-box1 p {
+      width:300px;
+      margin:30px;
+    }
+    #contact{
+  min-width:1000px;
+  background-color:#333;
+  color:#fff;
+}
+#contact h1{
+  font-family: Georgia,"Nanum Gothic";
+  font-size:60px;
+  font-weight: normal;
+}
+#contact h1 i{
+  margin-right:20px;
+}
+#contact > .container > p{
+  font-size:18px;
+  text-indent: 70px;
+}
+
+#contact .contact-wrap{
+  display:flex;
+  margin-top:80px;
+}
+
+.contact-wrap > div{
+  width:50%;
+}
+
+.contact-wrap > .address{
+  box-sizing:border-box;
+  padding:0 70px;
+}
+
+.contact-wrap > .address > p{
+  margin-bottom:40px;
+  line-height:40px;
+}
+.contact-wrap > .address > p > i{
+  font-size:35px;
+  vertical-align: middle;
+  margin-right:10px;
+}
+
+.contact-input label{
+  display:block;
+  line-height:1.5;
+  margin-bottom:10px;
+}
+.contact-input .wrap{
+  display:flex;
+  justify-content: space-between;
+}
+.contact-input .wrap > p{
+  width:235px;
+}
+.contact-input .wrap > textarea{
+  width:240px;
+  height:130px;
+  border:0; 
+  outline: 0;
+  padding:10px;
+  box-sizing: border-box;
+}
+input[type=text]{
+  width:100%;
+  height:40px;
+  border:0;
+  margin-bottom:5px;
+  padding:10px;
+  box-sizing: border-box;
+  outline:0;
+}
+input[type=submit]{
+  padding:6px 24px;
+  background-color:#f9be20;
+  border:0;
+  color:#fff;
+  font-weight: bold;
+  cursor:pointer;
+}
+/*버튼에 hover효과*/
+input[type=submit]:hover{
+  background-color:#f5ae16;
+}
+
+#contact hr{
+  border:1px solid #fff;
+  margin:50px 0;
+}
+
+.container{
+  padding-top: 100px;
+    padding-left: 100px;
+    width: 1000px;
+}
+
+/*footer*/
+footer > .container{
+  padding:30px 10px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p{
+  padding-left:70px;
+}
+footer span{margin-right:30px;}
+footer p a{
+  background-color:#ff9;
+}
+
+  </style>
+</head>
+<body>
+  <section class="hd">
+    <nav>
+      <h1>CREATIVE PLUS</h1>
+      <div class="menu-bar">
+        <ul>
+          <li><a href="#">메인</a></li>
+          <li><a href="#">인재찾기</a></li>
+          <li><a href="#">일자리찾기</a></li>
+        </ul>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
+    </nav>
+    <div class="layout">
+      <div class="txt">
+        <h1>CREATIVE <br> PLUS</h1>
+        <i class="fa-solid fa-plus" style="color: #FFD43B;"></i>
+        <h2>인재와 기회가 <br> 당신을 기다립니다.</h2>
+        <p>크리에이티브 코너와 함께 미래를 만들어보세요.</p>
+        <button>인재찾기</button>
+        <button>일자리찾기</button>
+      </div>
+    </div>
+    <div class="icon">
+    <div class="layout2">
+      <ul>
+        <li>
+          <img src="image/icon1.png" alt="">
+          <p>디자이너</p>
+        </li>
+        <li>
+          <img src="image/icon2.png" alt="">
+          <p>콘텐츠 담당</p>
+        </li>
+        <li>
+          <img src="image/icon1.png" alt="">
+          <p>광고제작</p>
+        </li>
+        <li>
+          <img src="image/icon1.png" alt="">
+          <p>음악 프로듀서</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <div class="avt">
+    <div class="layout3">
+      <ul>
+        <li>
+          <img src="image/avatar1.png" alt="">
+          <p>대표</p>
+        </li>
+        <li>
+          <img src="image/avatar2.png" alt="">
+          <p>부대표</p>
+        </li>
+        <li>
+          <img src="image/avatar3.png" alt="">
+          <p>이사</p>
+        </li>
+        <li>
+          <img src="image/avatar4.png" alt="">
+          <p>부이사</p>
+        </li>
+      </ul>
+      <div class="txt-box1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti sapiente hic recusandae nesciunt eius tenetur expedita cupiditate mollitia voluptatem ullam amet aliquid excepturi maxime. Dolore fuga ea facilis cumque!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, deleniti sapiente hic recusandae nesciunt eius tenetur expedita cupiditate mollitia voluptatem ullam amet aliquid excepturi maxime. Dolore fuga ea facilis cumque!</p>
+      </div>
+    </div>
+  </div>
+  <section id="contact">
+    <div class="container">
+      <h1>
+        <i class="fas fa-plus"></i>CONTACT
+      </h1>
+      <p>궁금한 내용은 언제든지 문의하세요!</p>
+      <div class="contact-wrap">
+        <div class="address">
+          <p>
+            <i class="far fa-envelope"></i> abcd@XXX.com <br>
+            <i class="fas fa-phone-volume"></i> 031-0000-0000
+          </p>
+          <p>
+            경기도 안산시 단원구 고잔동<br>
+            1-1, 110-240
+          </p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3173.071979577086!2d126.83636357642189!3d37.317122638389755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357b6f1b9976bc0b%3A0xdd81061eb4f2ef1d!2z6re466aw7Lu07ZOo7YSw7JWE7Lm0642w66-4IOyViOyCsOy6oO2NvOyKpA!5e0!3m2!1sko!2skr!4v1725865543008!5m2!1sko!2skr" width="360" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-input">
+          <form>
+            <label>
+              크리에이티브 플러스와 함께<br>
+              끼와 재능을 펼쳐보세요!
+            </label>
+            <div class="wrap">
+              <p>
+                <input type="text" placeholder="이름">
+                <input type="text" placeholder="이메일">
+                <input type="text" placeholder="제목">
+                <input type="submit" value="보내기">
+              </p>
+              <textarea placeholder="메시지"></textarea>
+            </div>
+          </form>
+          <hr>
+          <form>
+            <label>
+              크리에이티브 플러스의<br>
+              놀라운 인재들을 만나보세요!
+            </label>
+            <div class="wrap">
+              <p>
+                <input type="text" placeholder="이름">
+                <input type="text" placeholder="이메일">
+                <input type="text" placeholder="제목">
+                <input type="submit" value="보내기">
+              </p>
+              <textarea placeholder="메시지"></textarea>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  </section>
+</body>
+</html>
