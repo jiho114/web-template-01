@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>홈페이지연습</title>
+  <style>
+   @font-face {
+    font-family: 'NanumSquareNeoLight';
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot);
+    src: url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.eot?#iefix) format("embedded-opentype"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.woff) format("woff"), url(https://hangeul.pstatic.net/hangeul_static/webfont/NanumSquareNeo/NanumSquareNeoTTF-aLt.ttf) format("truetype");
+}
+    *{margin:0; padding:0; font-family: 'NanumSquareNeoLight';}
+    a{text-decoration:none; color:black; font-weight: bold;}
+    ul, li{list-style:none;}
+    table{padding:0;border:0;border-spacing:0px;border-collapse:collapse;}th,td{padding:0;}
+     
+    a:hover{
+      color: red;}
+      
+    .container{
+      width:100%;
+      height:100vh;
+    }
+
+    .login{
+      margin:0 auto;
+      width:1200px;
+      height:160px;
+      background-color:white;
+      border-bottom:1px solid grey;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .login>img{
+      width:216px;
+      height:48px;
+      margin-left:80px;
+      
+    }
+
+    .login .login-menu{
+      display: flex;
+      flex-direction: row;
+      
+    }
+
+    .login .login-menu .icon ul, .login-bar ul{
+      display: flex;
+    }
+    .login .login-menu .icon li, .login-bar li{
+      margin:10px;
+    }
+
+    .login-bar li, .login-bar a{
+      padding-top:5px;
+      position: relative;
+    }
+
+
+    .login-bar li + li a::before{
+      content:"";
+      width: 1px;
+      height:14px;
+      background: black;
+      position: absolute;
+      display: inline-block;
+      left:-10px;
+      top:35%;
+    }
+
+    .banner{
+      width:100%;
+      height:520px;
+      background-color:#222;
+      text-align: center;
+      background-image:url(image/bg\ 1.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+    }
+
+    .menu{
+      width:100%;
+      min-width:1200px;
+      height:80px;
+      background-color:#fce254;
+      display: flex;
+     justify-content: center;
+     align-items: center;
+    }
+
+    .menu ul{
+      display: flex;
+    }
+
+    .menu ul li{
+      margin:10px;
+      position: relative;
+      padding:20px;
+    }
+
+    .menu li + li a{
+      border-left:1px solid black;
+      padding-left:70px;
+    }
+    /* .menu li:not(:first-child) a::before{ */
+      
+   .list {
+    width:1200px;
+    margin:0 auto;
+    display: flex;
+    flex-direction:row;
+    margin-top:100px;
+    padding-left:80px;
+    margin-bottom:100px;
+    justify-content: space-between;
+    align-items: center;
+   }
+    
+   .list img{
+    width:310px;
+    height:289px;
+    
+    
+   }
+
+   .title{
+    width:660px;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .title h2{
+    font-size:18px;
+   }
+
+   .list table{
+    width:660px;
+    margin-top:5px
+   }
+
+   .list td{
+    border-bottom:1px solid #333;
+    height:44px;
+    font-weight: bold;
+    color:#333;
+    padding-left:20px;
+    position: relative;
+   }
+
+  #first-border td{
+    border-top:1px solid #222;
+  }
+
+  td:first-child::before{
+    content: "";
+    display: inline-block;
+    width:5px;
+    height:5px;
+    background-color: #333;
+    border-radius:50%;
+    position: absolute;
+    top:50%;
+    left:0;
+  }
+
+  footer{
+    width:100%;
+    min-width:1200px;
+    height:50px;
+    background-color: #222;
+    box-sizing: border-box;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+  }
+  footer>*{
+    padding:5px;
+    font-size:14px;
+    font-family: 'NanumSquareNeoLight';
+  }
+  footer>h3{
+    color:white;
+  }
+
+  footer p{
+    color: #777;
+  }
+
+  footer button{
+    background-color: transparent;
+    border:1px solid #777;
+    font-size:14px;
+    padding:5px;
+    color: white;
+  }
+
+  button:hover{
+    background-color:white;
+    color: black;
+    font-weight: bold;
+  }
+
+  
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="login">
+    <img src="image/logo_2015 1.png" alt="">
+    <div class="login-menu">
+      <div class="icon">
+        <ul>
+        <li><a href="https://twitter.com"><img src="image/TwitterX.png" alt=""></a></li>
+        <li><a href="https://www.facebook.com"><img src="image/Facebook.png" alt=""></a></li>
+        <li><a href="https://www.instagram.com"><img src="image/Instagram Old.png" alt=""></a></li>
+      </ul>
+      </div>
+      <div class="login-bar">
+        <ul>
+          <li><a href="#">LOGIN</li></a>
+          <li><a href="#">KOREAN</li></a>
+          <li><a href="#">ENGLISH</li></a>   
+        </ul>
+      </div>
+    </div>
+    </div>
+    <section class="banner">
+      <img src="image/title 1.png" alt="">
+    </section>
+    <nav class="menu">
+      <ul>
+        <li><a href="#">소개</a></li>
+        <li><a href="#">세션</a></li>
+        <li><a href="#">등록</a></li>
+        <li><a href="#">다시보기</a></li>
+        <li><a href="#">아트전시회</a></li>
+        <li><a href="#">문의</a></li>
+      </ul>
+    </nav>
+    <section class="list">
+      <div class="sell">
+      <div class="title">
+        <h3>공지사항</h3>
+        <a href="#">+more</a>
+      </div>
+      <table>
+        <tbody>
+          <tr id="first-border">
+            <td><a href="#">NDC 개인정보 처리방침 변경 안내</a></td>
+            <td>2024.09.10</td>
+          </tr>
+          <tr>
+            <td><a href="#">NDC24 발표자 모집 안내</a></td>
+            <td>2024.09.10</td>
+          </tr>
+          <tr>
+            <td><a href="#">NDC24 발표자 모집 안내2</a></td>
+            <td>2024.09.09</td>
+          </tr>
+          <tr>
+            <td><a href="#">NDC 코로나 바이러스 감염증-19로 인한 행사 연기 안내</a></td>
+            <td>2024.09.08</td>
+          </tr>
+          <tr>
+            <td><a href="#">NCD23 발표자 모집 안내</a></td>
+            <td>2024.09.08</td>
+          </tr>
+          <tr>
+            <td><a href="#">NDC23 행사 진행에 대해 안내 드립니다</a></td>
+            <td>2024.09.07</td>
+          </tr>
+      </tbody>
+      </table>
+    </div>
+     <a href="#"> <img src="image/main 1.png" alt=""> </a>
+    </section>
+    <footer>
+      <h3>ⓒ NEXON Korea Corporation All Rights Reserved.</h3>
+      <p>개인정보처리방침</p>
+      <p>Copyright Policy</p>
+      <button>FAMILY SITE</button>
+    </footer>
+  </div>
+</body>
+</html>
