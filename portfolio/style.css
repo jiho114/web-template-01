@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'GimpoGothicRegular00';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/GimpoGothicRegular00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{margin:0; padding:0;}
+ul, li{list-style:none;}
+a{text-decoration:none; color:inherit;}
+
+.banner{
+  min-width:1200px;
+  margin:0 auto;
+  text-align: center;
+}
+
+nav{
+  width:1200px;
+  margin:41px auto;
+}
+nav .menu{
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  font-family:"kalnia";
+}
+
+nav li>a:hover{
+  color:rgba(0,0,0,0.7);
+  border-bottom: 1px solid #f1f1f1;
+  border-top: 1px solid #f1f1f1;
+  transition:.8s;
+}
+
+.banner-img{
+  height:460px;
+  background-image:url(img/bannner--1.jpg);
+  text-align: left;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.layout-fix{
+  width:1200px;
+  margin: 0 auto;
+  padding:100px 30px;
+}
+.banner-img p{
+  font-size:24px;
+  color: white;
+  font-family:'GimpoGothicRegular00';
+  line-height:1.8;
+}
+
+.banner h1{
+  font-size:128px;
+  font-family: "kalnia";
+  margin:100px 0;
+}
+
+.main{
+  width:1200px;
+  height:914px;
+  margin:0 auto;
+  background-image: url(img/Frame\ 5.png);
+  margin-top:100px;
+  text-align: center;
+}
+
+
